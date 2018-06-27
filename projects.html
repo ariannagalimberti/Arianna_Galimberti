@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <link href="project.html">
+     <div class="top">
+       <a id="backtotop" href="#"><img src=bottone.png height=20px id="bottone"></a>
+     </div>
+
+      <div class="banner">
+        <div class="intro">
+          <ul>
+            <li class="square"><a href="index.html"> HOME </a></li>
+            <li class="square"><a href="AboutMe.html"> ABOUT ME </a></li>
+            <li id="nome" class="square">ARIANNA <br> GALIMBERTI</li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn" id="portofolio"> works </a>
+              <div class="dropdown-content">
+              <a href="graphics.html">GRAPHICS</a>
+              <a href="projects.html">PROJECTS</a>
+              <a href="photos.html">PHOTOS</a>
+              </div>
+            <li class="square" id="contact"><a href="#contatto"> CONTACT </a></li>
+        </div>
+    </div>
+
+  </head>
+
+<body>
+
+
+     <div id="image">
+        <div class="box">
+          <img id="treporcellini" src=treporcellini.jpg width=720px; height=650px> <img id="treporcellini2" src=treporcellini2.jpg width=720px>
+        </div>
+
+     <div class="box1">
+       <img id="treporcellini1" src=treporcellini1.jpg width=720px> <img id="treporcellini3" src=treporcellini3.jpg width=720px>
+     </div>
+
+     <div class="box2">
+       <img id="treporcellini4" src=treporcellini4.jpg width=1465px>
+     </div>
+
+     <div class="box3">
+       <img id="treporcellini5" src=treporcellini5.jpg width=720px>
+       <p id="text"> The images represent the final 3D modeling project for the <br>
+                     Computer Graphics Laboratory. The tale of The Three Little Pigs <br>
+                     has been reinterpreted and set in the Second world war.<br>
+                     <br>
+                     Polytechnic of Milan 2017/2018.</p>
+        </div>
+     </div>
+
+      <div class="sfondo4">
+          <h1 id="contatto">CONTACT</h1>
+          <div>
+            <li class="social" id="social2"><a href="https://www.instagram.com/ariananasgalimberti/", target = "_blank"> <img src=instagram.png height=35px></a></h4>
+            <li class="social" id="social2"><a href="https://www.facebook.com/arigalimberti", target = "_blank"> <img src=facebook.png height=35px></a></h4>
+            <li class="social" id="social2"><a href="https://it.pinterest.com/agalimberti0651/", target = "_blank"> <img src=pinterest.png height=35px></a></h4>
+          </div>
+          <h4 id="mail"><a href="mailto:arianna.galimberti.95@gmail.com"> Contact me</a></h4>
+
+      </div>
+
+
+  </body>
+  </html>
+
+
+
+
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px 30px;
+    font-family: bebas neue, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+        background-color: white ;
+        color: black;
+        text-decoration: underline;
+}
+
+li.dropdown {
+        display: inline-block;
+}
+
+.dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 30px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  font-size: 60%;
+  font-family: bebas neue, sans-serif;
+}
+
+.banner {
+  background-color: white;
+  background-size: cover;
+  height: 50px;
+}
+
+#banner .intro {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.square {
+  display: inline-block;
+  font-family: bebas neue, sans-serif;
+  color: black;
+  padding: 10px 30px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+ul.square {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+#nome {
+  color: black;
+  font-family: bebas;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  padding-right: 45px;
+
+}
+
+#contact {
+      padding-left: 50px;
+}
+
+.image {
+      padding: 20px 20px;
+}
+
+  h1 {
+      font-family: bebas, sans-serif;
+      color: black;
+      font-size: 30px;
+      text-align: center;
+      font-weight: 500;
+      padding-top: 40px;
+
+}
+
+
+.sfondo4 {
+      background-color: black;
+      background-size: cover;
+      height: 210px;
+      visibility: 50%;
+      text-align: center;
+}
+
+.intro {
+      background-color: white;
+      padding: 30px 0px;
+      position: relative;
+      text-align: center;
+      width: 100%;
+}
+
+.intro a {
+      background: white;
+      border: 1px solid black;
+      border-radius: 1px;
+      color: black;
+      margin: 10px;
+      padding: 10px;
+      text-decoration: none;
+      text-align: center;
+}
+
+.intro a:hover {
+        background: black;
+        border: 1px solid black;
+        color: white;
+        text-align: center;
+}
+
+.social {
+      text-align: center;
+      padding: 5px;
+      background-color: black;
+      text-decoration: none;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding-top: 15px;
+    }
+
+#mail a, #mail a:visited {4
+        background-color: black;
+        color: white;
+        font-family: lato light, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 10px;
+        text-decoration: none;
+
+}
+
+#social2 a, #social2 a:visited {
+          background-color: black;
+          color: white;
+          font-family: lato, sans-serif;
+          font-size: 15px;
+          font-weight: 400;
+          padding-top: 20px;
+          text-decoration: none;
+          padding-right: 5px;
+          padding-left: 5px;
+          text-align: center;
+}
+
+#treporcellini {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+#treporcellini2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.box1 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#treporcellini1 {
+  padding-right: 20px;
+}
+
+.box2,
+.box3 {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.box3 {
+  padding-bottom: 20px;
+}
+
+#backtotop {
+      height: 60px;
+      width: 60px;
+      background-color: white;
+      position: fixed;
+      bottom: 50px;
+      right: 70px;
+      border-radius: 50%;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      text-align: center;
+}
+
+#bottone {
+      padding-top: 17px;
+}
+
+#contatto {
+        color: white;
+}
+
+#text {
+  float: right;
+  padding-right: 350px;
+  padding-top: 280px;
+  font-family: lato, sans-serif;
+  font-weight: 70;
+  font-size: 13px;
+  color: black;
+}
+
+</style>
