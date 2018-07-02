@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <script src="jquery.min.js"></script>
+     <link href="index.html">
+	   <div class="top">
+       <a id="backtotop" href="#"><img src=bottone.png height=20px id="bottone"></a>
+     </div>
+      <div class="banner">
+        <div class="intro">
+          <ul>
+            <li class="square"><a href="index.html"> HOME </a></li>
+            <li class="square"><a href="AboutMe.html"> ABOUT ME </a></li>
+            <li id="nome" class="square">ARIANNA <br> GALIMBERTI</li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn" id="portofolio"> works </a>
+              <div class="dropdown-content">
+              <a href="graphics.html">GRAPHICS</a>
+              <a href="projects.html">PROJECTS</a>
+              <a href="photos.html">PHOTOS</a>
+              </div>
+            <li class="square" id="contact"><a href="#contatto"> CONTACT </a></li>
+        </div>
+    </div>
+
+  </head>
+
+<body>
+
+
+    <div class="foto">
+      <img src=rose.jpg width=100%>
+    </div>
+
+    <div class="sfondo3">
+      <img id="corona" src=coroncina.gif width=250px>
+    </div>
+
+    <div class="sfondotesto">
+      <div class="testo">
+        <div id="v1">"To live a <strong>creative</strong> life,</div>
+        <div id="v234">
+        <div id="v2">we must <strong>lose</strong> our fear</div>
+        <div id="v3">of being wrong"</div>
+      </div>
+      </div>
+    </div>
+
+    <div class="footer sfondo4">
+        <h1 id="contatto">CONTACT</h1>
+        <div>
+          <li class="social" id="social2"><a href="https://www.instagram.com/ariananasgalimberti/", target = "_blank"> <img src=instagram.png height=35px></a></h4>
+          <li class="social" id="social2"><a href="https://www.facebook.com/arigalimberti", target = "_blank"> <img src=facebook.png height=35px></a></h4>
+          <li class="social" id="social2"><a href="https://it.pinterest.com/agalimberti0651/", target = "_blank"> <img src=pinterest.png height=35px></a></h4>
+        </div>
+        <h4 id="mail"><a href="mailto:arianna.galimberti.95@gmail.com"> Contact me</a></h4>
+    </div>
+
+<script>
+
+function hoverV1() {
+            $("#v1").animate({"top":"45%"})
+            $("#v2").fadeIn()
+          }
+
+          function clickV2() {
+            $("#v3").fadeIn()
+          }
+
+          function clickV3() {
+            $("#v4").fadeIn()
+
+          }
+
+          function pulsaV4() {
+            $("#v4").toggleClass("pulsating")
+          }
+
+     $("#v1").on("mouseover",hoverV1);
+     $("#v2").on("click",clickV2);
+     $("#v3").on("click",clickV3);
+     $("#v4").on("click",pulsaV4);
+
+
+</script>
+</body>
+
+
+
+
+<style>
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px 30px;
+    font-family: bebas neue, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: white ;
+    color: black;
+    text-decoration: underline;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    font-size: 60%;
+    font-family: bebas neue, sans-serif;
+}
+
+.banner {
+  background-color: white;
+  background-size: cover;
+  height: 50px;
+}
+
+#banner .intro {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  }
+
+.square {
+  display: inline-block;
+  font-family: bebas neue, sans-serif;
+  color: black;
+  padding: 10px 30px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+ul.square {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+#nome {
+  color: black;
+  font-family: bebas;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  padding-right: 45px;
+
+}
+
+#contact {
+  padding-left: 50px;
+}
+
+.foto {
+  padding-top: 20px;
+}
+
+h1 {
+  font-family: bebas, sans-serif;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 40px;
+
+}
+
+.sfondo3 {
+  background-color: white;
+  background-size: cover;
+  height: 550px;
+  visibility: 50%;
+  text-align: center;
+}
+
+#corona {
+  padding-top: 130px;
+}
+
+.sfondotesto {
+  background-color: #ffd9d3;
+  background-size: cover;
+  height: 500px;
+  visibility: 40%;
+  text-align: center;
+  z-index: 0;
+}
+
+.testo {
+  position: absolute;
+  bottom: -900px;
+  left: 50%;
+  opacity: 0.7;
+}
+
+#v1 {
+  font-family: TimesNewRoman;
+  font-size: 23px;
+  transform: translate(-50%, -120%);
+  color: black;
+  font-style: italic;
+}
+
+#v234 {
+  font-family: TimesNewRoman;
+  font-size: 23px;
+  transform: translate(-50%,-50%);
+  top: 50%; left: 50%;
+  border-top: 50px;
+  font-style: italic;
+}
+
+#v2 {display: none;
+  left: 50
+}
+
+#v3 {display: none;
+  transform: translate(0, 30%);
+}
+
+#v4{display: none;
+  transform: translate(40%,70%);
+  color: white;}
+
+@keyframes pulsa {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+.pulsating {
+  animation: pulsa 1s infinite alternate;
+}
+
+.sfondo4 {
+  background-color: black;
+  background-size: cover;
+  height: 210px;
+  visibility: 50%;
+  text-align: center;
+  bottom: 0;
+  z-index: 1;
+}
+
+.footer {
+position: absolute;
+top: 1850px;
+bottom: 0;
+left: 0;
+width: 100%;
+}
+
+.intro {
+  background-color: white;
+  padding: 30px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+}
+
+ .intro a {
+  background: white;
+  border: 1px solid black;
+  border-radius: 1px;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.intro a:hover {
+    background: black;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+}
+
+.social {
+  text-align: center;
+  padding: 5px;
+  background-color: black;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding-top: 15px;
+}
+
+#mail a, #mail a:visited {
+    background-color: black;
+    color: white;
+    font-family: lato light, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+    text-decoration: none;
+
+  }
+
+#social2 a, #social2 a:visited {
+      background-color: black;
+      color: white;
+      font-family: lato, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      padding-top: 20px;
+      text-decoration: none;
+      padding-right: 5px;
+      padding-left: 5px;
+      text-align: center;
+      padding-bottom: 10px;
+}
+
+
+#backtotop {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  position: fixed;
+  bottom: 50px;
+  right: 70px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+  z-index: 2;
+}
+
+#bottone {
+  padding-top: 17px;
+  z-index: 2;
+}
+
+  #contatto
+  {
+    color: white;
+  }
+
+
+</style>
+</html>
